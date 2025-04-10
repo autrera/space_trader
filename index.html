@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Space Trader</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Space Trader is an offline web 'game', inspired by 90s browser games! Save it to your home screen in your phone!"
+        />
+        <link rel="manifest" href="manifest.json" />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <script type="module">
+            import { render } from "./solid/web.js";
+            import App from "./app.js";
+
+            render(App, document.getElementById("app"));
+        </script>
+        <div id="app"></div>
+    </body>
+</html>
